@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4c29;
+}
+
+#searchbar {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+}
+
+.car-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.car-card {
+  background: #1c1c1c;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.6s;
+  opacity: 0;
+  transform: scale(0.8);
+}
+.car-card.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.car-card h2 {
+  margin: 15px 0 ;
+  color: #ffcc00;
+}
+
+.car-card p {
+  font-size: 18px;
+  color: #ccc;
+
+}
+
+
+.shop-container {
+  width: 100%;
+  text-align: center;  
+  margin: 40px 0;
+}
+
+#shopbtn {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(45deg, #ff6600, #ffcc00);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#shopbtn:hover {
+  background: linear-gradient(45deg, #e65c00, #ffaa00);
+  transform: scale(1.05);
+}
